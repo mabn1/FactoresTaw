@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews | Lo último en tecnología</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="breaking-news">ÚLTIMO: </span>
+            <marquee behavior="scroll" direction="left">NVIDIA anuncia nueva GPU RTX 5090 con un 50% más de rendimiento &nbsp;|&nbsp; Apple revela fecha de lanzamiento del Vision Pro</marquee>
+        </div>
+    </div>
+
+    <!-- Header con Logo y Buscador -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-grid">
+                <div class="logo-container">
+                    <h1 class="logo">TECH<span>NEWS</span></h1>
+                    <p class="tagline">Innovación en tiempo real</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar noticias..." aria-label="Buscar noticias">
+                    <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de Categorías -->
+    <nav class="category-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active" aria-current="page"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="fas fa-microchip"></i> Hardware</a></li>
+                <li><a href="#"><i class="fas fa-code"></i> Programación</a></li>
+                <li><a href="#"><i class="fas fa-robot"></i> Inteligencia Artificial</a></li>
+                <li><a href="#"><i class="fas fa-mobile-screen"></i> Gadgets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Noticia Destacada (Hero) -->
+    <section class="featured-hero">
+        <div class="container">
+            <article class="hero-article">
+                <div class="hero-image">
+                    <img src="./assets/img/noticias/hero-ia.jpg" alt="Robot humanoide interactuando con personas" loading="lazy">
+                    <span class="hero-badge">EXCLUSIVA</span>
+                </div>
+                <div class="hero-content">
+                    <span class="category">INTELIGENCIA ARTIFICIAL</span>
+                    <h2><a href="#">Los androides de Tesla ya pueden reconocer emociones humanas</a></h2>
+                    <p class="excerpt">Nuevo modelo de IA emocional supera pruebas de Turing afectivas. Expertos debaten implicaciones éticas.</p>
+                    <div class="meta">
+                        <span class="author"><img src="./assets/img/team/maria-tech.jpg" alt="María Gómez"> Por María Gómez</span>
+                        <span class="date"><i class="far fa-clock"></i> Hace 2 horas</span>
+                        <span class="comments"><i class="far fa-comment"></i> 142</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Grid de Noticias Principales -->
+    <main class="container main-grid">
+        <!-- Columna Izquierda - Noticias Importantes -->
+        <div class="primary-news">
+            <article class="main-article">
+                <div class="article-image">
+                    <img src="./assets/img/noticias/quantum.jpg" alt="Computador cuántico IBM" loading="lazy">
+                </div>
+                <div class="article-content">
+                    <span class="category">COMPUTACIÓN CUÁNTICA</span>
+                    <h3><a href="#">IBM alcanza el "quantum supremacy" con nuevo procesador de 1,121 qubits</a></h3>
+                    <p class="excerpt">Resuelve en minutos problemas que tomarían 10,000 años a supercomputadoras tradicionales.</p>
+                    <div class="meta">
+                        <span class="date"><i class="far fa-clock"></i> Hoy</span>
+                        <span class="read-time">5 min lectura</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="main-article">
+                <div class="article-image">
+                    <img src="./assets/img/noticias/apple-vision.jpg" alt="Apple Vision Pro en uso" loading="lazy">
+                </div>
+                <div class="article-content">
+                    <span class="category">REALIDAD AUMENTADA</span>
+                    <h3><a href="#">Primeras impresiones del Apple Vision Pro: ¿Vale los $3,500?</a></h3>
+                    <p class="excerpt">Probamos el dispositivo durante 72 horas: ventajas, desventajas y quién debería comprarlo.</p>
+                    <div class="meta">
+                        <span class="date"><i class="far fa-clock"></i> Ayer</span>
+                        <span class="read-time">7 min lectura</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Columna Derecha - Noticias Secundarias -->
+        <aside class="secondary-news">
+            <h3 class="section-title"><i class="fas fa-bolt"></i> Trending</h3>
+            <article class="trending-article">
+                <span class="number">1</span>
+                <div class="content">
+                    <h4><a href="#">Windows 12: filtraciones revelan interfaz revolucionaria</a></h4>
+                    <span class="category">SOFTWARE</span>
+                </div>
+            </article>
+            <article class="trending-article">
+                <span class="number">2</span>
+                <div class="content">
+                    <h4><a href="#">PlayStation 6 llegaría en 2028 con tecnología holográfica</a></h4>
+                    <span class="category">GAMING</span>
+                </div>
+            </article>
+            <!-- Más artículos trending... -->
+
+            <!-- Widget de Redes Sociales -->
+            <div class="social-widget">
+                <h3 class="section-title"><i class="fas fa-hashtag"></i> Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Sección de Noticias por Categoría -->
+    <section class="category-section">
+        <div class="container">
+            <h3 class="section-title"><i class="fas fa-laptop-code"></i> Desarrollo Web</h3>
+            <div class="category-grid">
+                <!-- Artículo 1 -->
+                <article class="category-article">
+                    <div class="article-image">
+                        <img src="./assets/img/noticias/web-components.jpg" alt="Web Components" loading="lazy">
+                    </div>
+                    <div class="article-content">
+                        <h4><a href="#">Web Components: El futuro de la reutilización frontend</a></h4>
+                        <div class="meta">
+                            <span class="date"><i class="far fa-clock"></i> 5 Oct</span>
+                            <span class="comments"><i class="far fa-comment"></i> 28</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Más artículos... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3><i class="fas fa-paper-plane"></i> Recibe lo último en tu email</h3>
+                <p>Suscríbete a nuestro newsletter diario</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="tucorreo@ejemplo.com" aria-label="Email para newsletter" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>TechNews</h4>
+                    <p>Noticias tecnológicas actualizadas las 24 horas. Cobertura imparcial y en profundidad.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Secciones</h4>
+                    <ul>
+                        <li><a href="#">Aviso de Privacidad</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Equipo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 TechNews. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
